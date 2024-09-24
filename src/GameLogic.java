@@ -20,6 +20,8 @@ public class GameLogic {
 
     private boolean isGameOver = false;
 
+    private int activeShellType = 0;
+
     public void setSceneManager(SceneManager sceneManager) {
         this.sceneManager = sceneManager;
     }
@@ -126,11 +128,36 @@ public class GameLogic {
             if (event.getSource() == enemyPlayer.getPane()) {
 
                 Pane clickedPane = (Pane) event.getSource();
-                Shell newShell = new Shell(event.getX(), event.getY());
 
-                activePlayer.addShell(newShell);
+                if(activeShellType == 1) {
+                    NormalShell newShell = new NormalShell(event.getX(), event.getY()); //fixa till "normal"
+                    activePlayer.addShell(newShell);
+                    clickedPane.getChildren().add(newShell);
+                }
 
-                clickedPane.getChildren().add(newShell);
+                else if(activeShellType == 2) {
+                    ScatterShell newScatterShell = new ScatterShell(event.getX(), event.getY());
+
+                    activePlayer.addShell(newScatterShell);
+
+                    for (Shell shell : newScatterShell) {//strul med detta?? runtime error-ish??
+                        clickedPane.getChildren().add(shell);
+                    }
+
+                    /*for (Ship ship : activePlayer.getShips()) {
+                        clickedPane.getChildren().add(ship);
+                    }
+
+                    // Repaint shells
+                    for (Shell shell : enemyPlayer.getShells()) {
+                        clickedPane.getChildren().add(shell);
+                    }*/
+                }
+                else if(activeShellType == 3){
+                    BigShell newBigShell = new BigShell(event.getX(), event.getY());
+                    activePlayer.addShell(newBigShell);
+                    clickedPane.getChildren().add(newBigShell);
+                }
 
 
                 ArrayList<Bounds> shellBounds = new ArrayList<>();
@@ -254,5 +281,14 @@ public class GameLogic {
 
     public Player getActivePlayer(){
         return activePlayer;
+    }
+
+    public void setShelltype(int shellTypeNumber){
+        if(shellTypeNumber <= 3 && shellTypeNumber >= 1) {
+            this.activeShellType = shellTypeNumber;
+        }
+        else {
+            System.out.println("Needs to be a number 1, 2 or 3");
+        }
     }
 }

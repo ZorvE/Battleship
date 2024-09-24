@@ -146,15 +146,18 @@ public class GameSceneController {
     @FXML
     void useTypeOneShell(ActionEvent event) {
         System.out.println("Using type 1 shell");
+        gameLogic.setShelltype(1);
     }
 
     @FXML
     void useTypeThreeShell(ActionEvent event) {
         System.out.println("Using type 2 shell");
+        gameLogic.setShelltype(2);
     }
 
     @FXML
     void useTypeTwoShell(ActionEvent event) {
         System.out.println("Using type 3 shell");
+        gameLogic.setShelltype(3);
     }
 }

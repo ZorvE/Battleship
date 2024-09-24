@@ -4,74 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84568f60-a300-4777-8eb1-81a9e8488cea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Battleship game.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/char_default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/explosion.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/save.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ship.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatabaseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LoadPlayerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LoadPlayerScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PlayerCreationScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PlayerCreationSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SceneManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StartScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StartSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/battleship-styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/locked-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ocean-bg.jpg" afterDir="false" />
+    <list default="true" id="84568f60-a300-4777-8eb1-81a9e8488cea" name="Changes" comment="Added method">
+      <change afterPath="$PROJECT_DIR$/src/BigShell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NormalShell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ScatterShell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shell.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2mUmF4Te70lQSaLewW8kMeatvXR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Marcus/IdeaProjects/Battleship game/src",
-    "onboarding.tips.debug.path": "C:/Users/Marcus/IdeaProjects/Battleship game/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Marcus/IdeaProjects/Battleship game/src&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Marcus/IdeaProjects/Battleship game/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Marcus\IdeaProjects\Battleship game\src" />
@@ -91,6 +73,13 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,6 +89,26 @@
       <option name="presentableId" value="Default" />
       <updated>1727139424659</updated>
     </task>
+    <task id="LOCAL−00001" summary="Proof of concept">
+      <option name="closed" value="true" />
+      <created>1727141655369</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1727141655369</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Added method">
+      <option name="closed" value="true" />
+      <created>1727141864677</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1727141864677</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Proof of concept" />
+    <MESSAGE value="Added method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added method" />
   </component>
 </project>

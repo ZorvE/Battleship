@@ -2,11 +2,11 @@ import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 
-public abstract class Shell extends Circle {
+public class BigShell extends Shell {
 
-    public Shell(double x, double y, double splashArea) {
+    public BigShell(double x, double y) {
 
-        super(x, y, splashArea);
+        super(x, y, 35);
 
         setFill(new ImagePattern(new Image("file:explosion.gif")));
     }
