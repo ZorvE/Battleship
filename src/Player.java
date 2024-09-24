@@ -15,8 +15,6 @@ public class Player {
 
     private ArrayList<Shell> shells = new ArrayList<>();
 
-    private boolean placedAllShips = false;
-
     private boolean isPlayerOkToShot = true;
 
     private boolean isShipPlacementActive = true;
@@ -99,6 +97,9 @@ public class Player {
 
     public void setScore(int score){
         this.playerHighScore = score;
+    }
 
+    public boolean isPlayerOkToShot(){
+        return isPlayerOkToShot;
     }
 }
