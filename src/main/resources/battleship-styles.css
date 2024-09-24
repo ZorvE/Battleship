@@ -1,0 +1,18 @@
+.background-pane {
+    -fx-background-image: url("ocean-bg.jpg");
+    -fx-background-repeat: repeat;
+    -fx-background-position: center center;
+    -fx-background-size: cover;
+}
+
+.attack-field-indicator {
+    -fx-effect: innershadow(gaussian, red, 30, 0.5, 0, 0);
+}
+
+.unable-to-place-ships-indicator {
+    -fx-background-image: url("locked-bg.jpg");
+}
+
+.place-ships-indicator {
+    -fx-effect: innershadow(gaussian, green, 30, 0.5, 0, 0);
+}
