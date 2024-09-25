@@ -89,12 +89,12 @@ public class GameLogic {
             // Repaint ships
             clickedPane.getChildren().clear();
             for (Ship ship : activePlayer.getShips()) {
-                clickedPane.getChildren().add(ship);
+                clickedPane.getChildren().add(ship);//addAll??
             }
 
             // Repaint shells
             for (Shell shell : enemyPlayer.getShells()) {
-                clickedPane.getChildren().add(shell);
+                clickedPane.getChildren().add(shell);//addAll??
             }
         }
     }
@@ -140,18 +140,8 @@ public class GameLogic {
 
                     activePlayer.addShell(newScatterShell);
 
-                    for (Shell shell : newScatterShell) {//strul med detta?? runtime error-ish??
-                        clickedPane.getChildren().add(shell);
-                    }
+                    clickedPane.getChildren().addAll(newScatterShell);
 
-                    /*for (Ship ship : activePlayer.getShips()) {
-                        clickedPane.getChildren().add(ship);
-                    }
-
-                    // Repaint shells
-                    for (Shell shell : enemyPlayer.getShells()) {
-                        clickedPane.getChildren().add(shell);
-                    }*/
                 }
                 else if(activeShellType == 3){
                     BigShell newBigShell = new BigShell(event.getX(), event.getY());

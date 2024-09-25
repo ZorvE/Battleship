@@ -83,8 +83,9 @@ public class Player {
         shells.add(shell);
     }
 
-    public void addShell(ArrayList<Shell> shells){//ny
-        shells.addAll(shells);
+    public void addShell(ArrayList<Shell> shells){
+
+        this.shells.addAll(shells);
     }
 
     public void addShip(Ship ship){

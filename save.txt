@@ -2,10 +2,10 @@ Sven;char2.jpg;48;
 Olof;char2.jpg;19
 Erik;char1.jpg;19
 Janne;char1.jpg;0;
-Philip;char1.jpg;0
+Philip;char1.jpg;6
 Alfons;char2.jpg;15
-Ralf;char2.jpg;0
-Bert;char4.jpg;46
+Ralf;char2.jpg;1
+Bert;char4.jpg;47
 Gustav;char4.jpg;0
 Hans;char3.jpg;45
 Boa-Johan;char3.jpg;0
