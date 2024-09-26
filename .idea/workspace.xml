@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84568f60-a300-4777-8eb1-81a9e8488cea" name="Changes" comment="Added 2 new shells, and did some updates around that.">
+    <list default="true" id="84568f60-a300-4777-8eb1-81a9e8488cea" name="Changes" comment="Fixed scatter shots">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/save.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScatterShell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScatterShell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoadPlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoadPlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayerCreationSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerCreationSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ship.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,13 +110,21 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1727219464058</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Fixed scatter shots">
+      <option name="closed" value="true" />
+      <created>1727294079733</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1727294079733</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Proof of concept" />
     <MESSAGE value="Added method" />
     <MESSAGE value="Added 2 new shells, and did some updates around that." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 2 new shells, and did some updates around that." />
+    <MESSAGE value="Fixed scatter shots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed scatter shots" />
   </component>
 </project>

@@ -64,10 +64,13 @@ public class GameLogic {
 
             if(activePlayer.isShipPlacementActive()) {
                 //remove ships
+
                 for (Ship ship : activePlayer.getShips()) {
-                    if (ship.contains(event.getX(), event.getY())) {
-                        clickedPane.getChildren().remove(ship);
+                    if (ship.contains(ship.sceneToLocal(event.getSceneX(), event.getSceneY()))) {
+
                         activePlayer.removeShip(ship);
+                        clickedPane.getChildren().remove(ship);
+
                         clickedOnExistingShip = true;
                         break;
                     }
@@ -88,20 +91,18 @@ public class GameLogic {
 
             // Repaint ships
             clickedPane.getChildren().clear();
-            for (Ship ship : activePlayer.getShips()) {
-                clickedPane.getChildren().add(ship);//addAll??
-            }
+
+            clickedPane.getChildren().addAll(activePlayer.getShips());
 
             // Repaint shells
-            for (Shell shell : enemyPlayer.getShells()) {
-                clickedPane.getChildren().add(shell);//addAll??
-            }
+            clickedPane.getChildren().addAll(enemyPlayer.getShells());
         }
     }
 
-    public void rotateShip(MouseEvent event){ //skepp vill ej rotera ibland när flera skepp är utplacerade. (??)
+    public void rotateShip(MouseEvent event){
+
         for (Ship ship : activePlayer.getShips()) {
-            if (ship.contains(event.getX(), event.getY())) {
+            if (ship.contains(ship.sceneToLocal(event.getSceneX(), event.getSceneY()))) {
                 ship.setRotate(ship.getRotate() + 45);
                 break;
             }
@@ -157,34 +158,21 @@ public class GameLogic {
                     shellBounds.add(shot.getBoundsInParent());
                 }
 
-                if (activePlayer == playerOne) {
-                    for (Ship ship : playerTwo.getShips()) {
-                        shipBounds.add(ship.getBoundsInParent());
-                    }
-                } else {
-                    for (Ship ship : playerOne.getShips()) {
-                        shipBounds.add(ship.getBoundsInParent());
-                    }
+                for (Ship ship : enemyPlayer.getShips()) {
+                    shipBounds.add(ship.getBoundsInParent());
                 }
 
                 for (Bounds boundsShot : shellBounds) {
                     for (Bounds boundsShip : shipBounds) {
                         if (boundsShot.intersects(boundsShip)) {
                             int hitShipIndex = shipBounds.indexOf(boundsShip);
-                            if (activePlayer == playerOne) {
-                                playerTwo.getShips().get(hitShipIndex).hit();
-                                playerTwo.getShips().get(hitShipIndex).setVisible(true);
-                            }
-                            if (activePlayer == playerTwo) {
-                                playerOne.getShips().get(hitShipIndex).hit();
-                                playerOne.getShips().get(hitShipIndex).setVisible(true);
-                            }
+                            enemyPlayer.getShips().get(hitShipIndex).hit();
+                            enemyPlayer.getShips().get(hitShipIndex).setVisible(true);
                         }
                     }
                 }
             }
         }
-
         checkIfPlayerWon();
     }
 
@@ -237,7 +225,7 @@ public class GameLogic {
         }
     }
 
-    public void endGame(){ //se till så att den gammla datan sparas över av den nya
+    public void endGame(){
         if(!isGameOver){
             databaseManager.endGameSave(activePlayer.getName(), activePlayer.getImageName(), activePlayer.getScore()+3);
             databaseManager.endGameSave(enemyPlayer.getName(), enemyPlayer.getImageName(), enemyPlayer.getScore()+1);

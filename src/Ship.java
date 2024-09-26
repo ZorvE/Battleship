@@ -11,6 +11,8 @@ public class Ship extends Rectangle {
 
     Image image = new Image("file:ship.gif");
 
+    Image image2 = new Image("file:ship-exploded.gif");
+
     public Ship (double x, double y){
 
         super(x, y, 100, 20);
@@ -27,7 +29,8 @@ public class Ship extends Rectangle {
     public void hit(){
         isHit = true;
 
-        setFill(Color.LIGHTGOLDENRODYELLOW); // eld eller brinnande .png (gif?) ska in här. (Still bild)
+        ImagePattern imgPattern = new ImagePattern(image2, getX(), getY(), getWidth(), getHeight(), false);
+        setFill(imgPattern);
     }
 
     public boolean isShipHit() {

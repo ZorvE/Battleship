@@ -7,7 +7,7 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-public class PlayerCreationSceneController {//ska kunna ta bort spelare också?? se till att det inte går att skapa "tom" spelare
+public class PlayerCreationSceneController {//ska kunna ta bort spelare också?? se till att det inte går att skapa "tom" spelare. Make to subclass??
 
 
     DatabaseManager databaseManager = DatabaseManager.getInstance();

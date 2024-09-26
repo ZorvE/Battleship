@@ -107,14 +107,14 @@ public class DatabaseManager {
             }
             bufferedReader.close(); // Close the reader after reading
 
-            // Prepare the updated list of players
             ArrayList<String> playersToSave = new ArrayList<>();
 
-            boolean playerFound = false; // Track if the player is already in the file
+            boolean playerFound = false; // Track if the player is already in the file(plocka bort??)
 
             for (String originalPlayer : savedPlayers) {
                 String[] tokens = originalPlayer.split(";");
                 if (tokens[0].equals(playerName)) {
+
                     // If the player is found, update the information
                     StringBuilder stringBuilder = new StringBuilder();
                     stringBuilder.append(playerName).append(";").append(playerImage).append(";").append(playerHighScore).append("\n");
@@ -127,14 +127,13 @@ public class DatabaseManager {
             }
 
             // Write all players back to the file
-            FileWriter newFileWriter = new FileWriter(saveFile); // Overwrite mode
+            FileWriter newFileWriter = new FileWriter(saveFile);
             BufferedWriter newBufferedWriter = new BufferedWriter(newFileWriter);
 
             for (String player : playersToSave) {
-                newBufferedWriter.write(player); // Write each player info
+                newBufferedWriter.write(player);
             }
 
-            // Close the writer after writing all players
             newBufferedWriter.close();
         } catch (FileNotFoundException e) {
             System.err.println("The save file is not found!");
